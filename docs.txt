@@ -1,0 +1,27 @@
+project Name = infeedo task
+project start Date = 08/05/2018
+project developers = utkarsh vashishtha(Mean developer)
+
+
+Want to Know about project ??
+steps :
+1)
+.env file on root having a variable "NODE_ENV" which decide on which mode project will run.
+dev = development
+stag = stagging 
+prod = production
+
+2)
+in config -> env folder
+having index.js which run first and maintain all below things :-
+->Rules for database connections
+->Rules for server and port
+->Rules for required modules of express
+
+3)
+jwt handler having all the rules for Authentication
+and every rule apply on it is in the redisClient folder, basically it is saved in redis so that we can auth easily and fast.
+
+4)
+all the exception rules are in customeException and defination for using constants in exception 
+are in the constants.js on root of lib
